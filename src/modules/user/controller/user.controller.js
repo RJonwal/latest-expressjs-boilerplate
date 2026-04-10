@@ -24,6 +24,8 @@ exports.login = async (req, res) => {
       user: data.user,
       token: data.token,
     });
+
+    
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
